@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="../../bower_components/webcomponentsjs/webcomponents.min.js"></script>
+    <script src="../../bower_components/web-component-tester/browser.js"></script>
+    <link rel="import" href="../../ld-presenter.html">
+</head>
+<body>
+    <ld-presenter id="fixture"></ld-presenter>
+<script>
+    suite('<ld-presenter>', function() {
+        var element = document.getElementById('fixture');
+
+        test('is awesomest', function() {
+            assert.isTrue(true);
+        });
+    });
+</script>
+</body>
+</html>

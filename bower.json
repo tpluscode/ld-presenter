@@ -1,0 +1,24 @@
+{
+  "name": "ld-presenter",
+  "version": "0.0.1",
+  "authors": [
+    "tpluscode <tpluscode@users.noreply.github.com>"
+  ],
+  "description": "Linked Data UI presenter",
+  "main": "ld-presenter.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "web-component-tester": "Polymer/web-component-tester#~2.2.2"
+  },
+  "dependencies": {
+    "webcomponentsjs": "~0.5.4"
+  }
+}

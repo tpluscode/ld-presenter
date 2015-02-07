@@ -4,16 +4,23 @@
     <meta charset="utf-8">
     <script src="../../bower_components/webcomponentsjs/webcomponents.min.js"></script>
     <script src="../../bower_components/web-component-tester/browser.js"></script>
-    <link rel="import" href="../../ld-presenter.html">
+    <link rel="import" href="../../src/ld-presenter.html">
 </head>
 <body>
-    <ld-presenter id="fixture"></ld-presenter>
+    <ld-presenter id="fixture">
+        <ld-view-by-type id="person-view" type="http://schema.org/Person"></ld-view-by-type>
+    </ld-presenter>
 <script>
     suite('<ld-presenter>', function() {
         var element = document.getElementById('fixture');
 
-        test('is awesomest', function() {
-            assert.isTrue(true);
+        test('renders inline view', function() {
+            element.model = {
+                "@type": "http://schema.org/Person"
+            };
+
+            assert.isTrue(element.view.id === 'person-view');
+            assert.isTrue(element.view.getAttribute('active') === 'active');
         });
     });
 </script>

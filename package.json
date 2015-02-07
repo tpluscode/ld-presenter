@@ -12,7 +12,8 @@
   },
   "devDependencies": {
     "gulp-inline": "0.0.8",
-    "web-component-tester": "^2.2.2"
+    "web-component-tester": "^2.2.2",
+    "gulp-connect": "^2.2.0"
   },
   "scripts": {
     "postinstall": "bower install",
